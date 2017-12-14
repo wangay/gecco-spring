@@ -8,7 +8,9 @@ import org.springframework.context.ApplicationContextAware;
 import com.geccocrawler.gecco.pipeline.Pipeline;
 import com.geccocrawler.gecco.pipeline.PipelineFactory;
 import com.geccocrawler.gecco.spider.SpiderBean;
+import org.springframework.stereotype.Service;
 
+@Service("springPipelineFactory")
 public class SpringPipelineFactory implements PipelineFactory, ApplicationContextAware {
 
 	private ApplicationContext applicationContext;

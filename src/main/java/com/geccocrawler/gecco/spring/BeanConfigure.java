@@ -3,15 +3,15 @@ package com.geccocrawler.gecco.spring;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class BeanConfigure {
 
-	@Bean
+//	@Bean
 	public SpringPipelineFactory springPipelineFactory() {
 		return new SpringPipelineFactory();
 	}
 	
-	@Bean(name="consolePipeline")
+//	@Bean(name="consolePipeline")
 	public ConsolePipeline consolePipeline() {
 		return new ConsolePipeline();
 	}
