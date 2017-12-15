@@ -1,15 +1,13 @@
 package com.geccocrawler.gecco.spring;
 
-import javax.annotation.Resource;
-
+import com.geccocrawler.gecco.pipeline.PipelineFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 
-import com.geccocrawler.gecco.pipeline.PipelineFactory;
-
 public abstract class SpringGeccoEngine implements ApplicationListener<ContextRefreshedEvent> {
 
-	@Resource
+	@Autowired
 	protected PipelineFactory springPipelineFactory;
 	
 	@Override

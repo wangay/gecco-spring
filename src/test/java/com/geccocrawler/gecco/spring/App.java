@@ -16,13 +16,22 @@ public class App {
 		return new SpringGeccoEngine() {
 			@Override
 			public void init() {
+//				GeccoEngine.create()
+//				.pipelineFactory(springPipelineFactory)
+//				.classpath("com.geccocrawler.gecco.spring")
+//				.start("https://github.com/xtuhcy/gecco")
+//				.interval(3000)
+//				.loop(true)
+//				.start();
+
+
 				GeccoEngine.create()
-				.pipelineFactory(springPipelineFactory)
-				.classpath("com.geccocrawler.gecco.spring")
-				.start("https://github.com/xtuhcy/gecco")
-				.interval(3000)
-				.loop(true)
-				.start();
+						.pipelineFactory(springPipelineFactory)
+						.classpath("com.geccocrawler.gecco.spring")
+						.start("http://w3.afulyu.rocks/pw/htm_data/14/1712/916063.html")
+						.interval(3000)
+						.loop(true)
+						.start();
 			}
 		};
 	}
